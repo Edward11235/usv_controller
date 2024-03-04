@@ -168,7 +168,7 @@ def get_location(datahex):
     return longitude, latitude
 
 if __name__ == '__main__':
-    port = '/dev/ttyUSB0' # USB serial port 
+    port = '/dev/imu' # USB serial port 
     baud = 9600   # Same baud rate as the INERTIAL navigation module
     ser = serial.Serial(port, baud, timeout=0.5)
     print("Serial is Opened:", ser.is_open)
